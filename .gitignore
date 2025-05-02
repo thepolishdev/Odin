@@ -1,0 +1,23 @@
+# IDE specific files
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+
+# Go specific
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+*.prof
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Project specific
+Odin.iml
