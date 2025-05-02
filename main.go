@@ -16,13 +16,13 @@ type Heimdall struct {
 	Jitter              int64
 }
 
-var heimdall = Heimdall{false, "", 0}
+var heimdall = Heimdall{false, "", 2}
 
 func main() {
 	go processOdinCommands()
 
 	g := gin.Default()
-	g.GET("/", respondHeimdall)
+	g.GET("/serve", respondHeimdall)
 	err := g.Run(":8080")
 	if err != nil {
 		panic(err)
